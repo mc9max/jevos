@@ -1,0 +1,6 @@
+{
+  "JEV_API_KEY": {
+    "value": "",
+    "description": "Optional access key. Blank = open public instance (the default). When set, every endpoint except GET /health requires 'Authorization: Bearer <JEV_API_KEY>' (header, or append ?apiKey=<value> to the URL). No key is needed to run — the model is self-contained and free."
+  }
+}
