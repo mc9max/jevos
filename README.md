@@ -1,6 +1,6 @@
 # Deploy and Host
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/jevos)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/z05LYk)
 
 **JevOS** is an open-source, CPU-only alternative to [TypeSafe Jev](https://github.com/feder-cr/jev) for yes/no decisions — ship it and your application can ask a small model, entirely offline, "is this X?" and get back `P(yes)` in tens of milliseconds. It runs [jevos-v3](https://github.com/feder-cr/jev) (MiniCPM5-1B cut to 17 layers with a single-logit head, INT8 OpenVINO weights) on the CPU in a single binary — no Python, no GPU, no database, no companion service.
 
