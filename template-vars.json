@@ -3,6 +3,6 @@
     "name": "JEV_API_KEY",
     "defaultValue": "",
     "isOptional": true,
-    "description": "Optional access key. Blank = open public instance (the default). When set, every endpoint except GET /health requires 'Authorization: Bearer <JEV_API_KEY>' (header, or append ?apiKey=<value> to the URL). Set it to lock a shared instance down — clear it to open it back up. No key is needed to run: the model is self-contained and free."
+    "description": "Optional access key. Blank = open public instance (the default). When set, every endpoint except GET /health requires the 'Authorization: Bearer ***' header. Set it to lock a shared instance down — clear it to open it back up. No key is needed to run: the model is self-contained and free."
   }
 }

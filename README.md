@@ -1,12 +1,12 @@
 # Deploy and Host
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/z05LYk)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/deploy/jevos)
 
-**JevOS** is an open-source, CPU-only alternative to [TypeSafe Jev](https://github.com/feder-cr/jev) for yes/no decisions — ship it and your application can ask a small model, entirely offline, "is this X?" and get back `P(yes)` in tens of milliseconds. It runs [jevos-v3](https://github.com/feder-cr/jev) (MiniCPM5-1B cut to 17 layers with a single-logit head, INT8 OpenVINO weights) on the CPU in a single binary — no Python, no GPU, no database, no companion service.
+**JevOS** is an open-source, CPU-only alternative to [TypeSafe Jev](https://typesafe.com/jev) for yes/no decisions — ship it and your application can ask a small model, entirely offline, "is this X?" and get back `P(yes)` in tens of milliseconds. It runs [jevos-v3](https://github.com/feder-cr/jev) (MiniCPM5-1B cut to 17 layers with a single-logit head, INT8 OpenVINO weights) on the CPU in a single binary — no Python, no GPU, no database, no companion service.
 
 - API: **`POST /v1/systemone`** with `{model?, state, questions}` — TypeSafe's wire format, so existing Jev clients work unchanged
 - **`GET /health`** — liveness + model fingerprint, unauthenticated (Railway's healthcheck target)
-- Optional lock-down: set **`JEV_API_KEY`** and every endpoint except `/health` requires `Authorization: Bearer *** (or `?apiKey=<value>`)
+- Optional lock-down: set **`JEV_API_KEY`** and every endpoint except `/health` requires the `Authorization: Bearer *** header
 
 ## Why Deploy
 
