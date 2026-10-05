@@ -6,16 +6,11 @@
     </linearGradient>
   </defs>
   <!-- base -->
-  <rect x="32" y="32" width="192" height="192" rx="40" fill="url(#g)"/>
-  <!-- yes / no verdict pair (abstract marks, no glyphs/text) -->
-  <g fill="none" stroke="#ffffff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M82 108 l13 14 l24 -27"/>
-    <line x1="142" y1="97"  x2="166" y2="121"/>
-    <line x1="166" y1="97"  x2="142" y2="121"/>
-  </g>
-  <!-- P(yes) probability track: dim channel + solid fill + knob -->
-  <rect x="60"  y="150" width="136" height="26" rx="13" fill="#ffffff" opacity="0.30"/>
-  <rect x="60"  y="150" width="88"  height="26" rx="13" fill="#ffffff"/>
-  <circle cx="148" cy="163" r="15" fill="#ffffff"/>
-  <circle cx="148" cy="163" r="8"  fill="#22d3ee"/>
+  <rect width="256" height="256" rx="48" fill="url(#g)"/>
+  <!-- P(yes) gauge: track + verdict check + probability progress + knob -->
+  <circle cx="128" cy="114" r="52" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="24"/>
+  <path d="M94 103 l12 14 l26 -33" fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M87.6 143.9 a52 52 0 1 1 90.7 -49.4" fill="none" stroke="#22d3ee" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="178.3" cy="94.5" r="18" fill="#ffffff"/>
+  <circle cx="178.3" cy="94.5" r="9"  fill="#0891b2"/>
 </svg>
